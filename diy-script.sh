@@ -15,8 +15,11 @@ sed -i 's|/bin/login|/bin/login -f root|g' feeds/packages/utils/ttyd/files/ttyd.
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/packages/net/msd_lite
 rm -rf feeds/packages/net/smartdns
+rm -rf feeds/packages/net/transmission
+rm -rf feeds/packages/net/transmission-web-control
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/luci/themes/luci-theme-netgear
+rm -rf feeds/luci/applications/luci-app-transmission
 rm -rf feeds/luci/applications/luci-app-mosdns
 rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-serverchan
@@ -40,7 +43,7 @@ git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFil
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git clone --depth=1 https://github.com/Erope/openwrt_nezha package/openwrt_nezha
 git_sparse_clone master https://github.com/sirpdboy/netspeedtest homebox luci-app-netspeedtest
-git_sparse_clone main https://github.com/kenzok8/small-package luci-app-advanced luci-app-quickstart quickstart 
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-advanced luci-app-quickstart quickstart luci-app-transmission transmission transmission-web-control 
 git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos 
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
