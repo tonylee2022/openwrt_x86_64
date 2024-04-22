@@ -47,7 +47,9 @@ git_sparse_clone master https://github.com/openwrt/packages libs/libdeflate
 git_sparse_clone master https://github.com/openwrt/packages libs/libdht
 git_sparse_clone master https://github.com/openwrt/packages libs/libutp
 git_sparse_clone master https://github.com/openwrt/packages libs/libb64
-git_sparse_clone main https://github.com/kenzok8/small-package luci-app-advanced luci-app-quickstart quickstart luci-app-transmission transmission transmission-web-control 
+git_sparse_clone main https://github.com/kenzok8/small-package packages/net/transmission
+git_sparse_clone main https://github.com/kenzok8/small-package packages/net/transmission-web-control
+git_sparse_clone main https://github.com/kenzok8/small-package luci-app-advanced luci-app-quickstart quickstart luci-app-transmission 
 git_sparse_clone main https://github.com/Lienol/openwrt-package luci-app-filebrowser luci-app-ssr-mudb-server
 git_sparse_clone openwrt-18.06 https://github.com/immortalwrt/luci applications/luci-app-eqos 
 # git_sparse_clone master https://github.com/syb999/openwrt-19.07.1 package/network/services/msd_lite
